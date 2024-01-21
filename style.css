@@ -1,0 +1,541 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a img{
+    width: 256px;
+}
+
+nav{
+    margin: 40px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 41px;
+    margin: 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 16px;
+    position: relative;
+}
+
+nav ul li a.active::before{
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -4px;
+}
+
+nav ul li a::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid #3ca057;
+    bottom:-4px;
+    transition: width 0.3s;
+}
+
+main{
+    display: flex;
+    gap: 90px;
+    margin-top: 110px;
+}
+
+.Leva-strana{
+    width: 45%;
+}
+
+
+.Desna-strana{
+    flex-grow: 1;
+}
+
+h1{
+    font-size: 5.2rem;
+    font-family: 'Playfair display';
+    font-weight: normal;
+    margin: 0;
+}
+
+.subhead{
+    font-size: 1.8rem;
+}
+
+
+.cta-btns, .secondary-cta{
+    display: flex;
+    gap: 2em;
+}
+
+.primary-cta{
+    background-color: #3ca057;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    text-decoration:none;
+    border-radius: 1.9em;
+    padding: 1em 2em;
+}
+
+.secondary-cta{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1em 0;
+}
+
+.news{
+    display: flex;
+    gap: 3em;
+    padding: 5em;
+    border: 1px solid black;
+    border-radius: .8em;
+    position: relative;
+    margin-top: 5rem;
+}
+
+.news::before{
+    position: absolute;
+    content: "";
+    background: url(Slike/confetti.svg);
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: -20px;
+    z-index: 2;
+}
+
+p.vezbaci {
+    font-size: 3.3rem;
+    margin: 0;
+    font-weight: 200;
+}
+
+p.Detalji{
+    font-size: 1.4rem;
+    margin: 0;
+    line-height: 100%;
+}
+
+.Desna-strana{
+    display: grid;
+    gap: 2.3em;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+        "left right" 
+        "left bottom"; 
+}
+
+.card{
+    border-radius: 0.8em;
+    padding: 1.1em;
+    display: flex;
+    align-items: end;
+    background-size: 150%;
+    transition: background-size 800ms;
+}
+
+.card1 {
+    grid-area: left;
+    background-image: url("Slike/elasticna-traka-45-kg.jpg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+
+.card2 {
+    background-image: url("Slike/elasticna-traka-25-kg.jpg");
+    background-position: 100%;
+}
+
+
+.card3 {
+    background-image: url("Slike/Traka\ 5kg.webp");
+    background-position: 100%;
+}
+
+.mainp{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    gap: 3.5em;
+    margin-left: 5rem;
+    margin-bottom: 10rem;
+}
+
+.cardp{
+    border: 1px solid black;
+    border-radius: 0.8em;
+    padding: 1.1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    background-size: 150%;
+    transition: background-size 800ms;
+    height: 40rem;
+    width: 100%;
+}
+
+.cardp1{
+    background-image: url("Slike/Kratke\ male\ paralete.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 100%;
+    flex: 1;
+}
+
+.cardp2{
+    background-image: url("Slike/Niske\ dugacke\ paralete.webp");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 100%;
+    flex: 1;
+}
+
+.cardp3{
+    background-image: url("Slike/Paralete\ srednje.webp");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 100%;
+    flex: 1;
+}
+
+.cardp4{
+    background-image: url("Slike/Paralete\ visoke.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 100%;
+    flex: 1;
+}
+
+.cardp5{
+    background-image: url("Slike/Steznici\ rhsm\ crni.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    flex: 1;
+}
+
+.cardp6{
+    background-image: url("Slike/Beli\ steznici\ calipro.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    flex: 1;
+}
+
+.cardp7{
+    background-image: url("Slike/tecni\ mag.webp");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 100%;
+    flex: 1;
+}
+
+.cardp8{
+    background-image: url("Slike/tecni\ mag\ ban.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    flex: 1;
+}
+
+.card-details{
+    background: white;
+    border-radius: 0.6em;
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 800ms;
+}
+
+.card-details a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.card-details p {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+p.product-price{
+    font-size: 1.8rem;
+}
+
+.contact-form{
+    width: 1000px;
+    height: 550px;
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.contact-icons{
+    width: 250px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.contact-icons i{
+    margin: 0px 15px;
+}
+
+
+.input-fields{
+    width: 300px;
+    margin: 15px auto;
+}
+
+.input-fields p{
+    font-size: 15px;
+}
+
+.input-fields input{
+    width: 280px;
+    padding: 10px;
+    border: 2px solid #123740;
+    border-radius: 10px;
+}
+
+.input-fields p{
+    margin: 0;
+    font-family: 'Playfare display';
+}
+
+.input-fields textarea{
+    width: 100%;
+    height: 120px;
+    border: 2px solid #123740;
+    border-radius: 10px;
+}
+
+.submit-btn{
+    margin: auto;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: #123740;
+    border: 2px solid #123740;
+    background-color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.footer {
+    background-color: #5baf7a;
+    position: absolute;
+    margin-bottom: -700px;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #123740;
+  }
+
+  
+  .contact-info {
+    margin-top: 15px;
+  }
+  
+  .copyright {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+nav ul li a:hover::before{
+    width: 35%;
+}
+
+.primary-cta:hover{
+    background:	#5baf7a;
+}
+
+.secondary-cta:hover{
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    background-size: 160%;
+}
+
+.card:hover .card-details{
+    transform: translateY(-20px);
+}
+
+.cardp:hover{
+    background-size: 160%;
+}
+
+.cardp:hover .card-details{
+    transform: translateY(-20px);
+}
+
+.submit-btn:hover{
+    background-color: #123740;
+    color: #fff;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 900;
+    background: white;
+    width: 100%;
+    height: 100%;
+    animation: reveal 1s ease-in forwards;
+    transform-origin: bottom;
+}
+
+@keyframes reveal{
+    from{
+        transform: scaleY(1);
+    }
+    to {
+        transform: scaleY(0);
+    }
+}
+
+main {
+    animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    transform: scale(0.4);
+}
+
+@keyframes growIn {
+    to{
+        transform: scale(1);
+    }
+}
+@media screen and (min-width:320px) and (max-width:425px)  {
+    
+    .header{
+        max-width: 425px;
+    }
+
+    .header a img{
+        max-width: 120px;
+    }
+
+    .nav{
+        display: block;
+        padding: 0px;
+        width: auto;
+    }
+
+    .Leva-strana{
+        width: 45%;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .subhead{
+        font-size: 1rem;
+    }
+
+    .cta-btns, .secondary-cta{
+        display: flex;
+        gap: 1em;
+    }
+
+    .cta-btns{
+        width: 35%;
+    }
+
+    .primary-cta{
+        font-size: 1rem;
+        width: auto;
+        height: fit-content;
+    }
+
+    .secondary-cta{
+        font-size: 0.9rem;
+    }
+
+    .news{
+        display: flex;
+        width: 10%;
+    }
+
+    p.vezbaci{
+        font-size: 2.0rem;
+        margin: auto;
+        font-weight: 500;
+        padding: -8rem;
+    }
+
+    p.detalji{
+        font-size: 0.9rem;
+        margin: 0;
+        line-height: normal;
+    }
+
+    .Desna-strana{
+        width: 55%;
+        display: grid;
+        gap: 2rem;
+    }
+
+    .card1{
+       margin-bottom: 20rem;
+       margin-left: -5rem;
+       justify-content: flex-start;
+    }
+
+    .card-details .product-title{
+        font-size: 1.3rem;
+    }
+
+    .card-details p{
+        font-size: 0.9rem;
+    }
+
+}
